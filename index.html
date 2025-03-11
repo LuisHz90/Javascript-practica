@@ -11,10 +11,11 @@
 <body>
     <h1>Trabajando con Javascript</h1>
 
-    <script>
+<script>
 
 /* Ejercicio 1: Escribe un programa que pida dos números y escriba en la pantalla cuál es el mayor. */
-If(confirm("¿Quieres saber cuál es el número mayor?")){
+    if(confirm ("¿Quieres saber cuál es el número mayor?"))
+{
     let num1 = prompt("10");
     let num2 = prompt("100");
 
@@ -27,7 +28,8 @@ If(confirm("¿Quieres saber cuál es el número mayor?")){
     }
 }
 /*Ejercicio 2: Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres. */
-If(confirm("¿Quieres saber cuál es el número mayor?")){
+if(confirm("¿Quieres saber cuál es el número mayor?"))
+{
     let num1 = prompt("5");
     let num2 = prompt("20");
     let num3 = prompt("50");
@@ -44,8 +46,9 @@ If(confirm("¿Quieres saber cuál es el número mayor?")){
 }
 
 /*Ejercicio 3: Escribe un programa que pida un número y diga si es divisible entre 2.*/
-If(confirm("¿Quieres saber si un número es divisible entre 2?")){
-    let num = prompt("30");
+if(confirm("¿Quieres saber si un número es divisible entre 2?")) 
+{
+    let num =prompt("30");
 
     if(num % 2 === 0){
         alert(`El número ${num} es divisible entre 2`);
@@ -54,7 +57,8 @@ If(confirm("¿Quieres saber si un número es divisible entre 2?")){
     }
 }
 /*Ejercicio 4: Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a. */
-if(confirm("¿Quieres saber cuántas veces aparece la letra 'a' en una frase?")){
+if(confirm("¿Quieres saber cuántas veces aparece la letra 'a' en una frase?"))
+{
     let frase = prompt("Si puedes leer esto, eres grande");
     let contador = 0;
 
@@ -67,9 +71,10 @@ if(confirm("¿Quieres saber cuántas veces aparece la letra 'a' en una frase?"))
     alert(`La letra 'a' aparece ${contador} veces en la frase`);
 }
 /* Ejercicio 5: Escribe un programa que pida una frase y escriba las vocales que aparecen en ella.*/
-IF(confirm("¿Quieres saber cuáles son las vocales que aparecen en una frase?")){
+if(confirm("¿Quieres saber cuáles son las vocales que aparecen en una frase?")) 
+{
     let frase = prompt("Para navegar en internet se necesita un navegador");
-    let vocales = "";
+    let vocales = "a, e, i, o, u, ";
 
     for(let i = 0; i < frase.length; i++){
         if(frase[i] === "a" || frase[i] === "e" || frase[i] === "i" || frase[i] === "o" || frase[i] === "u"){
@@ -80,7 +85,8 @@ IF(confirm("¿Quieres saber cuáles son las vocales que aparecen en una frase?")
     alert(`Las vocales que aparecen en la frase son: ${vocales}`);
 }
 /* Ejercicio Bonus: Escribe un programa que pida una frase y escriba cuántas de las letras que tiene son vocales.*/
-if(confirm("¿Quieres saber cuántas de las letras de una frase son vocales?")){
+if(confirm("¿Quieres saber cuántas de las letras de una frase son vocales?"))
+{
     let frase = prompt("Para navegar en internet se necesita un navegador");
     let contador = 0;
 
